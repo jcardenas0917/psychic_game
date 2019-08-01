@@ -44,7 +44,7 @@ var computerLetter;
   }
 
 // This function is run whenever the user presses a key.
-document.onkeyup = function(event) {
+document.onkeyup = event => {
   // Determines which key was pressed.
   var userGuess = event.key;
   lettersUsed.push(userGuess);
